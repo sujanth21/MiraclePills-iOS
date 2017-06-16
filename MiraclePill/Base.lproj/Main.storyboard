@@ -144,6 +144,9 @@
                                     <action selector="buynowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mie-ux-wYJ"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Wp7-jS-STd">
+                                <rect key="frame" x="117.66666666666669" y="278" width="180" height="180"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -155,6 +158,7 @@
                             <constraint firstItem="b99-aI-Jyn" firstAttribute="top" secondItem="dKn-NC-wzh" secondAttribute="bottom" constant="8" id="6aK-NW-y23"/>
                             <constraint firstItem="ULt-NR-Lfz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="6qG-Ce-mk6"/>
                             <constraint firstItem="e1z-Wi-KbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Ms-2U-73H"/>
+                            <constraint firstItem="Wp7-jS-STd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9S4-OO-h0j"/>
                             <constraint firstItem="0Dl-yn-gqT" firstAttribute="top" secondItem="aIj-Dn-1Qe" secondAttribute="bottom" constant="8" id="ALi-qz-8Wf"/>
                             <constraint firstItem="ULt-NR-Lfz" firstAttribute="top" secondItem="aPI-Ba-AcF" secondAttribute="bottom" constant="8" id="BwX-tc-2Pn"/>
                             <constraint firstItem="aIj-Dn-1Qe" firstAttribute="trailing" secondItem="b99-aI-Jyn" secondAttribute="trailing" id="C2y-hh-HiB"/>
@@ -169,6 +173,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ULt-NR-Lfz" secondAttribute="trailing" constant="48" id="Nfk-zE-SCJ"/>
                             <constraint firstItem="Bix-qR-mJF" firstAttribute="top" secondItem="0Dl-yn-gqT" secondAttribute="bottom" constant="8" id="OxV-VD-Geb"/>
                             <constraint firstItem="aPI-Ba-AcF" firstAttribute="top" secondItem="TuN-a1-5Sf" secondAttribute="bottom" constant="8" id="Pcm-Ng-r1C"/>
+                            <constraint firstItem="Wp7-jS-STd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rjz-Bs-G3w"/>
                             <constraint firstItem="aIj-Dn-1Qe" firstAttribute="top" secondItem="b99-aI-Jyn" secondAttribute="bottom" constant="8" id="Rwl-hG-DjH"/>
                             <constraint firstItem="xOd-kX-Msk" firstAttribute="leading" secondItem="uQV-Tr-hqa" secondAttribute="leading" id="Ry2-NF-VzK"/>
                             <constraint firstAttribute="trailing" secondItem="fNp-RR-lDn" secondAttribute="trailing" constant="20" id="UVS-fQ-UhT"/>
@@ -208,6 +213,7 @@
                         <outlet property="fullNameTxtFld" destination="b99-aI-Jyn" id="QP7-s8-bRu"/>
                         <outlet property="statePicker" destination="ULt-NR-Lfz" id="04U-Z6-7Ne"/>
                         <outlet property="statePickerBtn" destination="aPI-Ba-AcF" id="hlY-J5-RSD"/>
+                        <outlet property="successImg" destination="Wp7-jS-STd" id="bHK-X1-hXv"/>
                         <outlet property="zipCodeLbl" destination="xOd-kX-Msk" id="X3X-ht-Ypw"/>
                         <outlet property="zipCodeTxtFld" destination="f9Z-mc-ryg" id="uGe-79-7UV"/>
                     </connections>
@@ -220,5 +226,6 @@
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>

@@ -24,6 +24,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var zipCodeLbl: UILabel!
     @IBOutlet weak var countryTxtFld: UITextField!
     @IBOutlet weak var zipCodeTxtFld: UITextField!
+    @IBOutlet weak var successImg: UIImageView!
     
     @IBOutlet weak var buynowBtn: UIButton!
     
@@ -54,10 +55,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buynowBtnPressed(_ sender: Any) {
+        
+        successImg.isHidden = false
+        
         fullNameLbl.isHidden = true
         fullNameTxtFld.isHidden = true
         addressLbl.isHidden = true
         addressTxtFld.isHidden = true
+        cityLbl.isHidden = true
+        cityTxtFld.isHidden = true
+        statePickerBtn.isHidden = true
+        countryLbl.isHidden = true
+        countryTxtFld.isHidden = true
+        zipCodeLbl.isHidden = true
+        zipCodeTxtFld.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
